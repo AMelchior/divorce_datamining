@@ -1,0 +1,36 @@
+---
+title: "datamineproject_aidan_melchior"
+author: "Aidan Melchior"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+install.packages("caret", dependencies = c("Depends", "Imports", "Suggests"))
+install.packages("knitr", dependencies = c("Depends", "Suggests"))
+library(caret)
+load(caret)
+library(knitr)
+load(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+```{r}
+
+```
+
+```{r data}
+library(ggplot2)
+library(knitr)
+library(caret)
+dat = read.csv("divorce.csv")
+preprocessParams <- preProcess(dat, method=c("sample"))
+print(preprocessParams)
+```
